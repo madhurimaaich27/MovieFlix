@@ -1,0 +1,63 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-grid {
+  margin-top: 20px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.chart-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+body.dark-mode .movie-card {
+  border-color: #444;
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .MuiTextField-root, body.dark-mode .MuiSelect-root {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .MuiInputBase-input {
+  color: #fff;
+}
+
+body.dark-mode .MuiButton-contained {
+  background-color: #555;
+}
